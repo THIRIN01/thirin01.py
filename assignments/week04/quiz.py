@@ -56,16 +56,16 @@ def number_operations():
     # Display original list
     print(f"Original numbers: {numbers}")
     
-    # Create filtered lists
-    even_numbers = # Your code here
-    odd_numbers = # Your code here
+        # Create filtered lists
+    even_numbers = [n for n in numbers if n % 2 == 0]           
+    odd_numbers = [n for n in numbers if n % 2 != 0]           
     
     # Calculate average
-    average = # Your code here
+    average = sum(numbers) / len(numbers)                       
     
     # Numbers greater than average
-    above_average = # Your code here
-    
+    above_average = [n for n in numbers if n > average]
+             
     # Display results
     # Your code here
 
